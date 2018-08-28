@@ -10,6 +10,14 @@ export class ContactsInMemoryDS {
         }
       },
       {
+        id: 3,
+        name: 'Laranjão',
+        email: 'lara@email.com',
+        phone: {
+          phoneNumber: '98457-1234'
+        }
+      },
+      {
         id: 2,
         name: 'Gandalf',
         email: 'gandalf@email.com',

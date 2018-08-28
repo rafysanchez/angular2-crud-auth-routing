@@ -57,7 +57,8 @@ export class ContactFormComponent implements OnInit, OnDestroy, ComponentCanDeac
       email: ['', [
         Validators.required,
         BasicValidators.email
-        //Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+        // tslint:disable-next-line:max-line-length
+        // Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
       ]],
       phone: this.formBuilder.group({
         phoneNumber: []
@@ -77,7 +78,8 @@ export class ContactFormComponent implements OnInit, OnDestroy, ComponentCanDeac
     const contactValue = this.form.value;
     let result;
 
-    if (this.isNew){
+    if (this.isNew) {
+     
       result = this.contactsService.update(contactValue);
     } else {
       result = this.contactsService.add(contactValue);

@@ -1,0 +1,56 @@
+
+.centralizado {
+border: 1px solid;
+background-color: rgb(245, 243, 129);
+max-width: 600px;
+margin: 2em auto;
+text-align: center;
+}
+
+.image {
+  // background-image: url("");
+  min-height: 400px;
+  overflow: hidden;
+  align-content: center;
+  margin-bottom: 15px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card form {
+  max-width: 100%;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+body {
+  background: #fff;
+}
+
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+  color: #e91e63;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #e91e63;
+  box-shadow: none;
+}

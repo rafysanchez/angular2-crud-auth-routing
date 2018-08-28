@@ -13,7 +13,7 @@ export class ContactsService {
 
   contactsChanged = new EventEmitter<Observable<Contact[]>>();
 
-  private url: string = 'app/contacts';
+  private url: any =  'app/contacts';
 
   constructor(private http: Http) { }
 
@@ -29,7 +29,9 @@ export class ContactsService {
       .catch(this.handleError);
   }
 
-  add(record){
+  add(record) {
+    console.log(record);
+     alert(this.url);
     return this.http.post(this.url, JSON.stringify(record),
         {headers: this.getHeaders()})
       .map(res => res.json().data)

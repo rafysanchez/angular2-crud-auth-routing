@@ -1,8 +1,10 @@
-<h5>Login</h5>
-<div class="row">
-  <form materialize class="col s12" [formGroup]="form" (ngSubmit)="onSignin()">
+<div class="card-panel col s6 centralizado">
+
+<h5 indigo-text>Login</h5>
+<div class="card row">
+  <form materialize class=" col s12" [formGroup]="form" (ngSubmit)="onSignin()">
     <div class="row">
-      <div class="input-field col s12">
+      <div class="input-field col s6">
         <input id="email" type="email" class="validate"
                formControlName="email"
                [class.invalid]="form.controls['email'].touched && !form.controls['email'].valid">
@@ -13,7 +15,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s12">
+      <div class="input-field col s6">
         <input id="password" type="password" class="validate"
                formControlName="password"
                [class.invalid]="form.controls['password'].touched && !form.controls['password'].valid">
@@ -24,7 +26,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-6">
         <button class="btn waves-effect waves-light" type="submit"
                 [disabled]="!form.valid">
           Login<i class="material-icons right">send</i>
@@ -33,3 +35,7 @@
     </div>
   </form>
 </div>
+
+</div>
+
+
