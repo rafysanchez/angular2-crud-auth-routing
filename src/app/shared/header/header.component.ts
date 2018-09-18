@@ -9,7 +9,7 @@ import { AuthService } from '../../auth/auth.service';
 })
 export class HeaderComponent {
 
-  private showNavBar: boolean = false;
+  public showNavBar: boolean = false;
 
   constructor(private authService: AuthService) { }
 
